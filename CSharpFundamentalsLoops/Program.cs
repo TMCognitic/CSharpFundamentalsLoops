@@ -26,21 +26,21 @@ namespace CSharpFundamentalsLoops
 
             #region Exercice 2
             {
-                //int i;
-                //do
-                //{
-                //    Console.Write("Donner un entier positif > 0 : ");
-                //}
-                //while (!int.TryParse(Console.ReadLine(), out i) && i > 0);
+                int i;
+                do
+                {
+                    Console.Write("Donner un entier positif > 0 : ");
+                }
+                while (!int.TryParse(Console.ReadLine(), out i) || i < 0);
 
-                //int result = i;
+                int result = i;
 
-                //while (i > 1)
-                //{
-                //    result *= --i;
-                //}
+                while (i > 1)
+                {
+                    result *= --i;
+                }
 
-                //Console.WriteLine(result);
+                Console.WriteLine(result);
             }
             #endregion
 
@@ -102,23 +102,23 @@ namespace CSharpFundamentalsLoops
 
             #region Exercice 6 Méthode de Newton
             {
-                decimal error = decimal.Zero;
-                decimal nombre = 255_698_763.2556M;
+                //decimal error = decimal.Zero;
+                //decimal nombre = 255_698_763.2556M;
 
-                decimal Xn = nombre;
-                decimal RC = nombre;
-                decimal pas = nombre;
+                //decimal Xn = nombre;
+                //decimal RC = nombre;
+                //decimal pas = nombre;
 
-                while (pas > error)
-                {
-                    RC = 0.5M * (RC + (nombre / RC));
-                    pas = (Xn - RC) / Xn;
-                    Xn = RC;
+                //while (pas > error)
+                //{
+                //    RC = 0.5M * (RC + (nombre / RC));
+                //    pas = (Xn - RC) / Xn;
+                //    Xn = RC;
 
-                    Console.WriteLine($"pas={pas} Racine={RC}");
-                }
+                //    Console.WriteLine($"pas={pas} Racine={RC}");
+                //}
 
-                Console.WriteLine($"la racine carrée de {nombre} est : {RC}");
+                //Console.WriteLine($"la racine carrée de {nombre} est : {RC}");
             }
             #endregion
         }
